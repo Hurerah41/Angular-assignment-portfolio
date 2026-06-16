@@ -1,0 +1,6 @@
+{
+  "name": "Personal Portfolio",
+  "description": "A simple Angular-based personal portfolio website containing standalone components for about, services, and footer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Arial Black", "Helvetica Bold", "Inter", sans-serif;
+}
+
+@layer utilities {
+  .profile-clip {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  
+  .text-outline {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+  }
+  
+  .text-outline-lg {
+    -webkit-text-stroke: 1.5px #f5f5f5;
+    color: transparent;
+  }
+}
