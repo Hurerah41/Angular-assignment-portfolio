@@ -1,20 +1,74 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🚀 Angular Assignment 1 – Component-Based Frontend Application
 
-# Run and deploy your AI Studio app
+## 📖 Project Overview
 
-This contains everything you need to run your app locally.
+This project was developed as part of an Angular learning assignment to explore the fundamentals of modern frontend development. The application demonstrates the implementation of reusable components, TypeScript features, data binding, and responsive user interface design using Angular.
 
-View your app in AI Studio: https://ai.studio/apps/22b022ff-8726-48d3-a1e5-dbab28d73e65
+---
 
-## Run Locally
+## ✨ Features
 
-**Prerequisites:**  Node.js
+### 🔹 Reusable Components
 
+Developed multiple Angular components to create a modular and maintainable application structure.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 🔹 TypeScript Variables
+
+Used TypeScript variables to manage and display dynamic content across different sections of the application.
+
+### 🔹 Interface-Based Data Models
+
+Implemented TypeScript interfaces to ensure consistency and type safety while handling application data.
+
+### 🔹 Data Binding
+
+Applied Angular's interpolation and property binding techniques to connect data with the user interface.
+
+### 🔹 Responsive Design
+
+Designed responsive layouts that adapt smoothly to desktop, tablet, and mobile screens.
+
+---
+
+## 🛠 Technologies Used
+
+* Angular
+* TypeScript
+* HTML5
+* CSS3
+
+---
+
+## 📚 Concepts Practiced
+
+* Angular Components
+* TypeScript Variables
+* Interfaces
+* Property Binding
+* Interpolation
+* Component Architecture
+* Responsive UI Design
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this assignment, I learned:
+
+* How Angular applications are structured.
+* How to create reusable and maintainable components.
+* The importance of TypeScript interfaces for type safety.
+* Techniques for displaying dynamic data using Angular.
+* Best practices for building responsive frontend applications.
+
+---
+
+## 📂 Project Scope
+
+This project focuses on frontend development only and was created for educational purposes. No backend APIs, authentication systems, or database integrations were used. The primary objective was to strengthen understanding of Angular fundamentals and component-driven development.
+
+---
+
+## 👨‍💻 Author
+
+Developed as part of an academic Angular practice assignment to enhance frontend development skills and gain hands-on experience with Angular's core concepts.
