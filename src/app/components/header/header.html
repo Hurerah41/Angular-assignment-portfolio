@@ -1,0 +1,21 @@
+<header class="header">
+  <div class="header-container">
+    <a href="#home" class="logo">
+      <span class="logo-accent">&lt;</span>{{ brandName }}<span class="logo-accent"> /&gt;</span>
+    </a>
+
+    <!-- Hamburger menu for mobile -->
+    <button class="nav-toggle" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen" aria-label="Toggle navigation">
+      <span class="hamburger" [class.open]="isMenuOpen"></span>
+    </button>
+
+    <!-- Navigation links -->
+    <nav class="nav-menu" [class.open]="isMenuOpen">
+      <ul>
+        <li *ngFor="let link of navLinks">
+          <a [href]="link.url" (click)="isMenuOpen = false" class="nav-link">{{ link.label }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

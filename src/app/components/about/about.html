@@ -1,0 +1,71 @@
+<!-- Hero Landing Section -->
+<section id="hero" class="hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h3 class="hero-subtitle">WELCOME TO MY PORTFOLIO</h3>
+      <h1 class="hero-title">Crafting Modern <span class="highlight">Web Experiences</span></h1>
+      <h2 class="hero-tagline">Hello, I'm {{ developerName }} — {{ role }}</h2>
+      <p class="hero-desc">{{ introduction }}</p>
+      
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+      </div>
+    </div>
+    
+    <div class="hero-image-wrapper">
+      <div class="avatar-glow"></div>
+      <img [src]="profileImg" [alt]="developerName" class="profile-image">
+    </div>
+  </div>
+</section>
+
+<!-- Detailed About & Skills Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-grid">
+      <!-- Bio column -->
+      <div class="bio-column">
+        <h3 class="section-subtitle">ABOUT ME</h3>
+        <h2 class="section-title">My Journey & Expertise</h2>
+        <div class="title-underline"></div>
+        <p class="bio-text">{{ bioParagraph1 }}</p>
+        <p class="bio-text">{{ bioParagraph2 }}</p>
+        
+        <div class="bio-stats">
+          <div class="stat-card">
+            <h3 class="stat-number">5+</h3>
+            <p class="stat-label">Years Exp</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">50+</h3>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">100%</h3>
+            <p class="stat-label">Client Happy</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Skills column -->
+      <div class="skills-column">
+        <h3 class="section-subtitle">TECHNICAL PROFICIENCY</h3>
+        <h2 class="section-title">My Core Skills</h2>
+        <div class="title-underline"></div>
+        
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let skill of skills">
+            <div class="skill-info">
+              <span class="skill-name">{{ skill.name }}</span>
+              <span class="skill-percentage">{{ skill.level }}%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-level" [style.width.%]="skill.level"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

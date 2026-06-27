@@ -1,0 +1,169 @@
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="services-container">
+    <div class="section-header text-center">
+      <h3 class="section-subtitle">{{ sectionSubtitle }}</h3>
+      <h2 class="section-title">{{ sectionTitle }}</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of services">
+        <div class="service-icon-container">
+          <!-- Render Web Design Icon -->
+          <svg *ngIf="service.icon === 'palette'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.03458 19.178 5.14143 19.423 5.14143 19.6797V20C5.14143 21.1046 6.03686 22 7.14143 22H12Z" />
+            <circle cx="7.5" cy="10.5" r="1.5" />
+            <circle cx="11.5" cy="7.5" r="1.5" />
+            <circle cx="16.5" cy="9.5" r="1.5" />
+            <circle cx="15.5" cy="14.5" r="1.5" />
+          </svg>
+          
+          <!-- Render Frontend Development Icon -->
+          <svg *ngIf="service.icon === 'code'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+            <line x1="14" y1="4" x2="10" y2="20" />
+          </svg>
+          
+          <!-- Render UI/UX Design Icon -->
+          <svg *ngIf="service.icon === 'layers'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+            <polyline points="2 17 12 22 22 17" />
+            <polyline points="2 12 12 17 22 12" />
+          </svg>
+        </div>
+        
+        <h3 class="service-name">{{ service.name }}</h3>
+        <p class="service-description">{{ service.description }}</p>
+        
+        <div class="service-card-glow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+  <div class="services-container">
+    <div class="section-header text-center">
+      <h3 class="section-subtitle">{{ portfolioSubtitle }}</h3>
+      <h2 class="section-title">{{ portfolioTitle }}</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="project-card" *ngFor="let project of projects">
+        <div class="project-img-wrapper">
+          <img [src]="project.image" [alt]="project.title" class="project-img">
+          <div class="project-overlay">
+            <a [href]="project.link" target="_blank" class="project-link-btn" aria-label="View Project Source">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-info">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-desc">{{ project.description }}</p>
+          
+          <div class="project-tags">
+            <span class="project-tag" *ngFor="let tag of project.tags">{{ tag }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="services-container">
+    <div class="section-header text-center">
+      <h3 class="section-subtitle">{{ contactSubtitle }}</h3>
+      <h2 class="section-title">{{ contactTitle }}</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Info Card -->
+      <div class="contact-info-panel">
+        <h3 class="info-panel-title">Let's collaborate</h3>
+        <p class="info-panel-desc">I am currently open for full-time frontend roles, freelance opportunities, and collaborative designs. Drop me a line and let's get building!</p>
+        
+        <div class="contact-info-list">
+          <div class="info-item">
+            <div class="info-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="info-text-wrapper">
+              <span class="info-label">Email Me</span>
+              <a href="mailto:alex@example.com" class="info-value">alex@example.com</a>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="info-text-wrapper">
+              <span class="info-label">Location</span>
+              <span class="info-value">San Francisco, CA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Card -->
+      <div class="contact-form-panel">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmitContactForm()" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" required [(ngModel)]="contactModel.name" class="form-control" placeholder="Your name">
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" required email [(ngModel)]="contactModel.email" class="form-control" placeholder="Your email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" required [(ngModel)]="contactModel.subject" class="form-control" placeholder="Project inquiry, hello, etc.">
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" required rows="5" [(ngModel)]="contactModel.message" class="form-control" placeholder="Describe your project..."></textarea>
+          </div>
+
+          <button type="submit" [disabled]="!contactForm.form.valid || formSubmitted" class="btn btn-primary btn-submit">
+            <span *ngIf="!formSubmitted">Send Message</span>
+            <span *ngIf="formSubmitted" class="loader-text">Sending...</span>
+          </button>
+          
+          <!-- Success feedback banner -->
+          <div class="success-alert" *ngIf="successMessage">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="alert-icon">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <span>Message sent successfully! Thank you.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
